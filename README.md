@@ -1,2 +1,2 @@
-# OER_DataAccessVia_WFS
-OER on how to use classic OGC WFS for accessing INSPIRE datasets on Protected Sites
+# OER_DataAccessVia OGC API Features
+OER on how to use OGC API Features for accessing and using gespatial data
