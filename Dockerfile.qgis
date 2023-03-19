@@ -1,0 +1,19 @@
+# Use an official QGIS runtime as a parent image
+FROM qgis/qgis:latest
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Install the libxcb-xinerama0 package
+RUN apt-get update && \
+    apt-get install -y libxcb-xinerama0 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy the QGIS project file into the container
+COPY Demo-Project.qgz .
+
+# Expose the QGIS port
+EXPOSE 80
+
+# Define the command to run QGIS Server
+CMD ["qgis_mapserv.fcgi", "--port", "80", "--url-rewriting", "off"]

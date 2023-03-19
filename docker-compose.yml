@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+  qgis:
+    build:
+      context: .
+      dockerfile: Dockerfile.qgis
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
