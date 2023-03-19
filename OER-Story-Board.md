@@ -12,12 +12,12 @@ In this open educational resource (OER) you will learn how to access and use OGC
 
 The module is structured as follows
 
-1. Overview on OGC API Features and OGC API REST Framework
-2. Brief idea on what what INSPIRE and INSPIRE Feature Data are, how INSPIRE Download Services can be implemented
-3. Installation of QGIS application and access of INSPIRE Feature Data for Protected Sites.
-4. Installating and using Jupyter Notebooks for accessing and analyzing OGC API Feature Data
-5. Exploratory data-analysis on the extracted feature data with Python libraries.
-6. Wrap up
+1. Overview on OGC API Features and OGC API REST Framework 5 minutes
+2. Brief idea on INSPIRE Feature Data 2 Minutes
+3. Installation of QGIS application and access of INSPIRE Feature Data for Protected Sites. 4 minutes
+4. Installating and using Jupyter Notebooks for accessing and analyzing OGC API Feature Data 8 minutes
+5. Exploratory data-analysis on the extracted feature data with Python libraries. 8 minutes
+6. Wrap up 3 minutes
 
 If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of some self-assessments/exercises you can check if you have understood the essential concepts and technologies.
 
