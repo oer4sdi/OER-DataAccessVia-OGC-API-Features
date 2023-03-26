@@ -1,4 +1,4 @@
-# OER_DataAccessVia OGC API Features
+# OER_DataAccessVia OGC API Features (Work In Progress)
 
 This repository contains all the relevant materials involved to create and publish the Open Educational Resource (OER) on Data Access Via OGC API Features. The repository will cover the following aspects.
 

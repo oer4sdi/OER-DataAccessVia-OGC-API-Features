@@ -1,4 +1,4 @@
-# How to access and use Feature Data via OGC API Features
+# How to access and use Feature Data via OGC API Features(In Progress)
 
 ## 1. Overview
 
@@ -8,7 +8,7 @@ In this open educational resource (OER) you will learn how to access and use OGC
 - Use Python to access and extract Feature Data from INSPIRE Database(Protected Sites Data)
 - Deep dive into the extracted features and understand the usecases in depth.
 
-## 2. Content
+## 2. Content(In Progress)
 
 The module is structured as follows
 
@@ -21,7 +21,7 @@ The module is structured as follows
 
 If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of some self-assessments/exercises you can check if you have understood the essential concepts and technologies.
 
-## 3. Learning Objectives
+## 3. Learning Objectives(In Progress)
 
 By the end of this OER, learners will be able to:
 
@@ -34,6 +34,6 @@ By the end of this OER, learners will be able to:
 - Advantages of using OGC API Rest framework over classic web services.
 - Apply these skills to a windfarm use case
 
-## 4. Assessment
+## 4. Assessment(In Progress)
 
 Learners will be assessed through their completion of the exercises included in this OER.

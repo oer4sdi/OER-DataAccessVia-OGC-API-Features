@@ -1,19 +1,29 @@
 version: "3"
-
 services:
-  python:
+  pygeoapi:
+    image: geopython/pygeoapi:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/app
+      - ./pygeoapi-config:/pygeoapi/local.config:ro
+    command: ["pygeoapi", "run", "--port=80", "--config=/pygeoapi/local.config"]
+
+  jupyter:
     build:
       context: .
-      dockerfile: Dockerfile.python
+      dockerfile: Dockerfile
     ports:
       - "8888:8888"
     volumes:
       - .:/app
-  qgis:
-    build:
-      context: .
-      dockerfile: Dockerfile.qgis
-    environment:
-      DISPLAY: $DISPLAY
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
+    command:
+      [
+        "jupyter",
+        "notebook",
+        "--ip=0.0.0.0",
+        "--port=8888",
+        "--no-browser",
+        "--allow-root",
+        "--notebook-dir=/app",
+      ]
