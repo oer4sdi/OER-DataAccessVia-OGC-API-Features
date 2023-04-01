@@ -1,13 +1,13 @@
 version: "3"
 services:
   pygeoapi:
-    image: geopython/pygeoapi:latest
+    image: ghcr.io/geopython/pygeoapi:latest
     ports:
-      - "80:80"
+      - "5000:80"
     volumes:
       - ./app:/app
       - ./pygeoapi-config:/pygeoapi/local.config:ro
-    command: ["pygeoapi", "run", "--port=80", "--config=/pygeoapi/local.config"]
+    command: ["pygeoapi", "run", "--config=/pygeoapi/local.config"]
 
   jupyter:
     build:
