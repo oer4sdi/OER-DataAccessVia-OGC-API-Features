@@ -1,13 +1,19 @@
 version: "3"
+
 services:
   pygeoapi:
-    image: ghcr.io/geopython/pygeoapi:latest
+    image: geopython/pygeoapi:latest
     ports:
-      - "5000:80"
+      - "80:80"
     volumes:
       - ./app:/app
       - ./pygeoapi-config:/pygeoapi/local.config:ro
-    command: ["pygeoapi", "run", "--config=/pygeoapi/local.config"]
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost"
+      - "traefik.backend=pygeoapi"
+      - "traefik.frontend.priority=100"
+      - "traefik.docker.network=pygeoapi-network"
 
   jupyter:
     build:
