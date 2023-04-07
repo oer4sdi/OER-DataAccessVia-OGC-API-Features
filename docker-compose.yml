@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 
 services:
   pygeoapi:
@@ -8,6 +8,8 @@ services:
     volumes:
       - ./app:/app
       - ./pygeoapi-config:/pygeoapi/local.config:ro
+    environment:
+      SCRIPT_NAME: ""
     labels:
       - "traefik.enable=true"
       - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost"
@@ -22,7 +24,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - .:/app
+      - ./app/notebooks:/app/notebooks
     command:
       [
         "jupyter",
@@ -31,5 +33,5 @@ services:
         "--port=8888",
         "--no-browser",
         "--allow-root",
-        "--notebook-dir=/app",
+        "--notebook-dir=/app/notebooks",
       ]
