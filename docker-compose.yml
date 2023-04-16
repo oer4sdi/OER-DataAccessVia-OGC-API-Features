@@ -1,10 +1,11 @@
-version: "3.9"
+version: "3.3"
 
 services:
   pygeoapi:
+    container_name: pygeoapi_container
     image: geopython/pygeoapi:latest
     ports:
-      - "80:80"
+      - 5000:80
     volumes:
       - ./app:/app
       - ./pygeoapi-config:/pygeoapi/local.config:ro
@@ -18,6 +19,7 @@ services:
       - "traefik.docker.network=pygeoapi-network"
 
   jupyter:
+    container_name: jupyter_container
     build:
       context: .
       dockerfile: Dockerfile
