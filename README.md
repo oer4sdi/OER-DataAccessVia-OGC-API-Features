@@ -7,12 +7,12 @@ This repository contains all the relevant materials involved to create and publi
 - Technical guidance on practical application of the concepts starting from installation, setup of IDE,
   discussion of common challenges and expalination of a happy path to the fully working solution.
 
-### Content:
+### Content((In Progress)):
 
-- Chapter 1: Overview
-- Chapter 2: Background to the domain of study and its significance
-- Chapter 3: Technical tutorial on the installation and usage
-- Chapter 4: Wrap up and self assessments
+- Chapter 1: Overview(Complete)
+- Chapter 2: Background to the domain of study and its significance(In Progress)
+- Chapter 3: Technical tutorial on the installation and usage(In Progress)
+- Chapter 4: Wrap up and self assessments(Not Started)
 
 The OER is designed for students and professionals who want to improve their skills in developing applications for near-real-time data.
 
@@ -22,7 +22,7 @@ Users should have some basic knowledge of Python and it would be great to have s
 
 ### How to use the OER Module
 
-The OER is implemented as an [H5P](https://h5p.org/) module that can be downloaded and embedded into any H5P runtime environment, such as:
+The OER(In Progress) is implemented as an [H5P](https://h5p.org/) module that can be downloaded and embedded into any H5P runtime environment, such as:
 
 - Learning management systems based on Moodle or Ilias
 - H5P editing environments such as the [H5P Official Editor](https://h5p.org/) or the lightweight [LUMI H5P editor](https://lumi.education/)
