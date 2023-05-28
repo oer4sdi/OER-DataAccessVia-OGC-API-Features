@@ -3,27 +3,19 @@ version: "3.3"
 services:
   pygeoapi:
     container_name: pygeoapi_container
-    image: geopython/pygeoapi:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.pygeoapi_container
     ports:
       - 5000:80
     volumes:
       - ./app:/app
-      - ./pygeoapi-config/local.config.yml:/pygeoapi/local.config.yml
-
-    environment:
-      SCRIPT_NAME: ""
-    labels:
-      - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:demo.pygeoapi.io,localhost"
-      - "traefik.backend=pygeoapi"
-      - "traefik.frontend.priority=100"
-      - "traefik.docker.network=pygeoapi-network"
 
   jupyter:
     container_name: jupyter_container
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.jupyter_container
     ports:
       - "8888:8888"
     volumes:
