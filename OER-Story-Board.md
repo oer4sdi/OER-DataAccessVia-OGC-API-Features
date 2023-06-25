@@ -109,7 +109,7 @@ INSPIRE, the Infrastructure for Spatial Information in Europe, has defined appli
 
 ## 3. Practical exercises
 
-### 3.1 A practical use case: accessing INSPIRE Feature Data on Protected Sites
+### 3.1 A practical use case: Accessing INSPIRE Feature Data on Protected Sites
 
 ### 3.2 Preparing software and data for the exercises
 
@@ -142,30 +142,23 @@ The below figure is the diagrammatic representation of the Docker Environment we
 
 ## <img src="https://github.com/oer4sdi/OER-DataAccessVia-OGC-API-Features/blob/main/images/OERDevelopmentEnvironmentArchitecture.svg" width="1000">
 
-The module is structured as follows
+#### QGIS Installation
 
-1. Overview on OGC API Features and OGC API REST Framework 5 minutes
-2. Brief idea on INSPIRE Feature Data 2 Minutes
-3. Installation of QGIS application and access of INSPIRE Feature Data for Protected Sites. 4 minutes
-4. Installating and using Jupyter Notebooks for accessing and analyzing OGC API Feature Data 8 minutes
-5. Exploratory data-analysis on the extracted feature data with Python libraries. 8 minutes
-6. Wrap up 3 minutes
+1. Go to the QGIS website at https://qgis.org/en/site/forusers/download.html and click on the Download button.
+2. On the Downloads page, you will see several options for different operating systems. Choose the appropriate option for your system, either Windows, macOS or Linux.
+3. Once you have chosen the appropriate option, you will be taken to the download page for that version. Click on the download link for your operating system.
+4. When the download is complete, open the installation file. For Windows, the file will have a .exe extension. For macOS, the file will have a .dmg extension.
+5. Follow the instructions in the installer to install QGIS on your system. The installer will guide you through the process of selecting the components you want to install, choosing the installation location, and other options.
+6. Once the installation is complete, launch QGIS by clicking on the shortcut on your desktop or in the Start menu.
+7. When QGIS starts up, you may be prompted to select a default projection. Choose the projection that is most appropriate for your location.
+8. You're now ready to use QGIS! You can start by loading some data into the program and exploring the various tools and features that are available.
 
-If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of some self-assessments/exercises you can check if you have understood the essential concepts and technologies.
+# [The following sections below are In Progress]
 
-## 3. Learning Objectives(In Progress)
+### 3.3 Using a standard web browser to interact with the OGC-API Features Web Service
 
-By the end of this OER, learners will be able to:
+### 3.4 Using QGIS to access feature data via OGC API Features
 
-- Understand what INSPIRE and INSPIRE Feature Data are
-- Implement INSPIRE Download Services
-- Work with OGC API Features and the OGC API REST framework
-- Use QGIS to access and analyze INSPIRE Feature Data(Protected Sites)
-- Use Python to access INSPIRE Feature Data(Protected Sites)
-- Gain clarity on the process to extract Feature Data and its use in Spatial Data studies
-- Advantages of using OGC API Rest framework over classic web services.
-- Apply these skills to a windfarm use case
+### 3.5 Using Python to interact with the OGC-API Features web service
 
-## 4. Assessment(In Progress)
-
-Learners will be assessed through their completion of the exercises included in this OER.
+## 4. Discussion and Wrap up
