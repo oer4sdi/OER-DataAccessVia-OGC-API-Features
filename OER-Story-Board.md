@@ -30,7 +30,7 @@ The ISO Feature model is often used as the basis for modeling concrete Feature T
 
 Access to Feature Data can be provided in various ways. One way is to distribute the data in the form of a dataset that is encoded e.g. as XML/GML, GeoJSON, Shape or any other format. Another way is to provide a data access service, i.e., a set of operations, accessible through an Application Programming Interface (API) that supports selective download of the data, data transformations or even manipulation of the data source. Commonly used APIs are the OGC Web Feature Service interface (OGC WFS) and the OGC API Features interface.
 
-<img src="https://github.com/oer4sdi/OER-DataAccessVia-OGC-API-Features/blob/main/images/FeatureServiceDiagram.drawio" width="1000">
+<img src="https://github.com/oer4sdi/OER-DataAccessVia-OGC-API-Features/blob/main/images/FeatureServiceDiagram.svg" width="500">
 
 ---
 
