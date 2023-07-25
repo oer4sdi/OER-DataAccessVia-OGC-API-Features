@@ -89,9 +89,9 @@ metadata:
     role: pointOfContact
 
 resources:
-  Biosphärenreservate:
+  Biospharenreservate:
     type: collection
-    title: Biosphärenreservate
+    title: Biospharenreservate
     description: Protected areas of nature conservation
     keywords:
       - Protected Areas
@@ -111,24 +111,24 @@ resources:
       spatial:
         bbox:
           [
-            440292.82966099215,
-            5410694.808936666,
-            548515.0801785045,
-            5422222.258727528,
+            8.846809605190643,
+            47.35774013506897,
+            15.676629854516267,
+            56.29366890593978,
           ]
-        crs: http://www.opengis.net/def/crs/EPSG/0/25832
+        crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
     providers:
       - type: feature
         name: OGR
         data:
           source_type: ESRI Shapefile
-          source: /data/biosphaerenreservate_epsg25832_shp.shp # Path to the local file that contains the data
-          source_options:
-            ADJUST_GEOM_TYPE: FIRST_SHAPE
-          gdal_ogr_options:
-            SHPT: POINT # Shape type (Point, Line, Polygon) of features in the dataset
+          source: /data/Biospharenreservate/biosphaerenreservate_epsg25832_shp.shp # Path to the local file that contains the data
+        source_options:
+          ADJUST_GEOM_TYPE: FIRST_SHAPE
+        gdal_ogr_options:
+          SHPT: POINT
         id_field: id # Unique id column of feature elements in the dataset.
-        layer: biosphaerenreservat # Name of the feature layer in the dataset.
+        layer: ffh_epsg25832_shp # Name of the feature layer in the dataset.
 
   karlsruhe: # A name for identifying the dataset
     type: collection
@@ -152,10 +152,21 @@ resources:
         data:
           source_type: ESRI Shapefile
           source: /data/karlsruhe/gis_osm_pois_free_1.shp # Path to the local file that contains the data
+
+          source_capabilities:
+            paging: True
+
+          gdal_ogr_options:
+            EMPTY_AS_NULL: NO
+            GDAL_CACHEMAX: 64
+            # GDAL_HTTP_PROXY: (optional proxy)
+            # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+            CPL_DEBUG: NO
+            SHPT: POINT # Shape type (Point, Line, Polygon) of features in the dataset
+
           source_options:
             ADJUST_GEOM_TYPE: FIRST_SHAPE
-          gdal_ogr_options:
-            SHPT: POINT # Shape type (Point, Line, Polygon) of features in the dataset
+
         id_field: osm_id # Unique id column of feature elements in the dataset.
         layer: gis_osm_pois_free_1 # Name of the feature layer in the dataset.
 
