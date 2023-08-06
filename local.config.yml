@@ -117,18 +117,32 @@ resources:
             56.29366890593978,
           ]
         crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+      temporal:
+        begin: 2011-11-11
+        end: null # or empty (either means open ended)
     providers:
       - type: feature
         name: OGR
         data:
           source_type: ESRI Shapefile
           source: /data/Biospharenreservate/biosphaerenreservate_epsg25832_shp.shp # Path to the local file that contains the data
-        source_options:
-          ADJUST_GEOM_TYPE: FIRST_SHAPE
-        gdal_ogr_options:
-          SHPT: POINT
+
+          source_capabilities:
+            paging: True
+
+          gdal_ogr_options:
+            EMPTY_AS_NULL: NO
+            GDAL_CACHEMAX: 64
+            # GDAL_HTTP_PROXY: (optional proxy)
+            # GDAL_PROXY_AUTH: (optional auth for remote WFS)
+            CPL_DEBUG: NO
+            SHPT: POINT # Shape type (Point, Line, Polygon) of features in the dataset
+
+          source_options:
+            ADJUST_GEOM_TYPE: FIRST_SHAPE
+
         id_field: id # Unique id column of feature elements in the dataset.
-        layer: ffh_epsg25832_shp # Name of the feature layer in the dataset.
+        layer: biosphaerenreservate_epsg25832_shp # Name of the feature layer in the dataset.
 
   karlsruhe: # A name for identifying the dataset
     type: collection

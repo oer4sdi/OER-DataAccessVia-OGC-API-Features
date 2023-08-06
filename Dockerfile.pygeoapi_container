@@ -5,7 +5,7 @@ FROM geopython/pygeoapi:latest
 COPY ./local.config.yml /pygeoapi/local.config.yml
 
 # Copy the data directory
-ADD ./data /pygeoapi/data
+# ADD ./data /pygeoapi/data
 
 # Volume mapping from docker-compose not working for data and config file. 
 # The COPY and the ADD command appears to be a fully working alternative. 
