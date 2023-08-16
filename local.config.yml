@@ -133,7 +133,8 @@ resources:
         data:
           source_type: ESRI Shapefile
           source: /data/Biospharenreservate/biosphaerenreservate_epsg25832_shp.shp # Path to the local file that contains the data
-
+          source_srs: EPSG:25832
+          target_srs: EPSG:4326
           source_capabilities:
             paging: True
 
