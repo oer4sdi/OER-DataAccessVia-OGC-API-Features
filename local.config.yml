@@ -123,7 +123,7 @@ resources:
         #     807887.3372999997809529,
         #     5637140.4079999998211861,
         #   ]
-        crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        # crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
       temporal:
         begin: 2011-11-11
         end: null # or empty (either means open ended)
@@ -133,8 +133,6 @@ resources:
         data:
           source_type: ESRI Shapefile
           source: /data/Biospharenreservate/biosphaerenreservate_epsg25832_shp.shp # Path to the local file that contains the data
-          source_srs: EPSG:25832
-          target_srs: EPSG:4326
           source_capabilities:
             paging: True
 
@@ -144,14 +142,15 @@ resources:
             # GDAL_HTTP_PROXY: (optional proxy)
             # GDAL_PROXY_AUTH: (optional auth for remote WFS)
             CPL_DEBUG: NO
-            SHPT: POINT # Shape type (Point, Line, Polygon) of features in the dataset
+            SHPT: POLYGON # Shape type (Point, Line, Polygon) of features in the dataset
 
           source_options:
             ADJUST_GEOM_TYPE: FIRST_SHAPE
 
-        id_field: id # Unique id column of feature elements in the dataset.
         crs: # supported coordinate reference systems (CRS) for 'crs' and 'bbox-crs' query parameters
-          - http://www.opengis.net/def/crs/EPSG/0/25832
+          - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        storage_crs: http://www.opengis.net/def/crs/EPSG/0/25832
+        id_field: id # Unique id column of feature elements in the dataset.
         layer: biosphaerenreservate_epsg25832_shp # Name of the feature layer in the dataset.
 
   karlsruhe: # A name for identifying the dataset

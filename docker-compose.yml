@@ -20,7 +20,8 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./app/notebooks:/app/notebooks
+      # - ./app/notebooks:/app/notebooks
+      - ./app:/app
     command:
       [
         "jupyter",

@@ -1,0 +1,13 @@
+1. Veröffentlichung in 2022
+
+Aktualität der Daten der Schutzgebiete und -objekte, 
+die dem NLWKN bis zu dem genannten Datum vorlagen. 
+Stand: 31.12.2022
+
+Bitte beachten Sie bei der Nutzung der Daten folgende Hinweise:
+
+- Der NLWKN als Fachbehörde für Naturschutz führt eine landesweite Übersicht der Naturschutzrechtlich besonders geschützten Teile von Natur und Landschaft. Die Geometrien sind nur auf Grundlage der Digitalen Topografischen Karte 1:25.000 (DTK25) aussagekräftig. 
+
+- Die rechtlich verbindlichen Gebietsabgrenzungen für alle Schutzgebiete beruhen auf denen im Amts- bzw. Ministerialblatt veröffentlichten Karten und liegen bei den Unteren Naturschutzbehörden vor. 
+
+- In den Daten ist das einstweilig gesicherte Naturschutzgebiet WE 323 "Aue der Düte mit Nebengewässern" enthalten.
