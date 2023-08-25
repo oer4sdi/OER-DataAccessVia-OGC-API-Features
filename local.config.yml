@@ -239,6 +239,8 @@ resources:
             ADJUST_GEOM_TYPE: FIRST_SHAPE
         crs: # supported coordinate reference systems (CRS) for 'crs' and 'bbox-crs' query parameters
           - http://www.opengis.net/def/crs/OGC/1.3/CRS84
+          - http://www.opengis.net/def/crs/EPSG/0/4647
+          - http://www.opengis.net/def/crs/EPSG/0/25832
         storage_crs: http://www.opengis.net/def/crs/EPSG/0/4647
         id_field: KENNZ_FFN # Unique id column of feature elements in the dataset.
         layer: Naturschutzgebiete_DTK25 # Name of the feature layer in the dataset.
