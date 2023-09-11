@@ -9,14 +9,12 @@ RUN echo "c.NotebookApp.iopub_data_rate_limit = 1000000000" >> /home/$NB_USER/.j
 
 # Install required dependencies
 RUN pip install --no-cache-dir \
-    contextily>=1.1.0 \
     folium>=0.12.1 \
     jupyter \
     matplotlib>=3.0.0 \
     numpy>=1.16.0 \
     pandas>=0.24.0 \
     geopandas>=0.4.0 \
-    geodatasets>=2.0.0 \
     owslib>=0.18.0 \
     requests>=2.21.0
 
