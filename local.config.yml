@@ -61,14 +61,14 @@ metadata:
       - data
       - api
     keywords_type: theme
-    terms_of_service: https://creativecommons.org/licenses/by/4.0/
+    terms_of_service: https://www.govdata.de/dl-de/by-2-0
     url: https://github.com/geopython/pygeoapi
   license:
-    name: CC-BY 4.0 license
-    url: https://creativecommons.org/licenses/by/4.0/
+    name: Data License Germany Attribution 2.0
+    url: https://www.govdata.de/dl-de/by-2-0
   provider:
-    name: pygeoapi Development Team
-    url: https://pygeoapi.io
+    name: INSTITUTE FOR GEOINFORMATICS, UNIVERSITY OF MÜNSTER
+    url: https://www.uni-muenster.de/Geoinformatics/en/
   contact:
     name: OER4SDI
     position: Project
