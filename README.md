@@ -9,16 +9,16 @@ In this tutorial you will learn how to access geospatial data using web services
 The tutorial is structured as follows: 
 -	Overview 
 -	Background
-  o Feature Data and Feature Services
- 	o	Advantages of accessing data with OGC Web Services
- 	o	OGC-API series of interface specifications
- 	o	OGC-API Features interface
+    - Feature Data and Feature Services
+    - Advantages of accessing data with OGC Web Services
+    - OGC-API series of interface specifications
+    - OGC-API Features interface
 -	Practical exercises
-  o	Use cases and technical setting
- 	o	Installing software and data
- 	o	Using the web browser to interact with the OGC-API Features service
- 	o	Using QGIS to access feature data via the OGC API Features interface
- 	o	Using Python to interact with the OGC-API Features service
+    - Use cases and technical setting
+    - Installing software and data
+    - Using the web browser to interact with the OGC-API Features service
+    - Using QGIS to access feature data via the OGC API Features interface
+    - Using Python to interact with the OGC-API Features service
 -	Summary and Discussion
 
 ### Target Audience and Prerequisites
