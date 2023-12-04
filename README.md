@@ -29,7 +29,6 @@ It would be great if you also had some experience with Docker and Jupyter Notebo
 ### How to use the OER Module
 
 The OER(In Progress) is implemented as an [H5P](https://h5p.org/) module that can be downloaded and embedded into any H5P runtime environment, such as:
-
 - Learning management systems based on Moodle or Ilias
 - H5P editing environments such as the [H5P Official Editor](https://h5p.org/) or the lightweight [LUMI H5P editor](https://lumi.education/)
 - Content managament systems such as [Wordpress](https://wordpress.com/) with "H5P" plugin installed
