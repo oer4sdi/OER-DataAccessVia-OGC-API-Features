@@ -34,6 +34,7 @@ The OER(In Progress) is implemented as an [H5P](https://h5p.org/) module that ca
 - Content managament systems such as [Wordpress](https://wordpress.com/) with "H5P" plugin installed
 
 Simply download just the H5P file, upload it to one of the environments and use it from there...
+Alternatively you can use the Document "OER-DataAccessVia-OGC-API-Features.pdf" from the PDF folder which has the same content.
 
 ### Open License
 
