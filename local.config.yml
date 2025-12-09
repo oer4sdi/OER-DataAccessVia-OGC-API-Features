@@ -41,12 +41,14 @@ server:
   language: en-US
   cors: true
   pretty_print: true
-  limit: 10
   # templates: /path/to/templates
   map:
     url: https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png
     attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
   ogc_schemas_location: /schemas.opengis.net
+  limits:
+    default_items: 10
+    max_items: 2000
 
 logging:
   level: ERROR
